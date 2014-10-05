@@ -575,6 +575,12 @@ executable  tmvar
                  , stm ==2.4.*
   default-language: Haskell2010
 
+executable  fair-tmvar
+  main-is: fair-tmvar.hs
+  build-depends:   base >= 4.5 && < 4.8
+                 , stm ==2.4.*
+  default-language: Haskell2010
+
 executable  geturlsfirst
   main-is: geturlsfirst.hs
   other-modules: ConcurrentUtils
